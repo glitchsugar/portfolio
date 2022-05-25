@@ -1,0 +1,178 @@
+html {
+    cursor:url(uwucursorsmol.png), default;
+}
+
+body {
+    font-family:sans-serif;
+    margin:0;
+    background: #0078D7;
+    overflow:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:#000000;
+}
+
+a:hover {
+    cursor:url(owocursorsmol.png) 15 0, pointer; 
+}
+
+.fixed-position {
+    position: absolute;
+    box-sizing:border-box;
+    background-color:#87cefa;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    box-shadow:#1e90ff 0px 0px 0px 5px, rgba(30,144,255, 0.3) 0px 0px 0px 10px, rgba(30,144,255, 0.2) 0px 0px 0px 15px, rgba(30,144,255, 0.1) 0px 0px 0px 20px, rgba(30,144,255, 0.05) 0px 0px 0px 25px;
+}
+
+.bgcolor {
+    box-sizing:border-box;
+    margin-left: 27px;
+    margin-top: 9px;
+    display: flex;
+}
+
+.bgcolor:hover {
+    cursor:url(owocursorsmol.png) 15 0, pointer; 
+}
+
+li:hover {
+    cursor:url(owocursorsmol.png) 15 0, pointer; 
+}
+
+.button {
+    display: inline-block;
+    margin-left:-17px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #202020;
+    position: relative;
+    transition: margin-top 0.2s ease-in-out;
+}
+
+.button:hover {
+    margin-top:-5px;
+    cursor:url(owocursorsmol.png) 15 0, pointer; 
+}
+
+#white {
+    background-color: #ffffff;
+}
+
+#pink {
+    background-color: #ffc0cb;
+}
+
+#orange {
+    background-color: #ffab8c;
+}
+
+#yellow {
+    background-color: #ffee8b;
+}
+
+#green {
+    background-color: #cbfdb7;
+}
+
+#blue {
+    background-color: #87cefa;
+}
+
+#purple {
+    background-color: #dda0dd;
+}
+
+.title {
+    font-family: 'Varela Round', sans-serif;
+    color:#000000be;
+    margin-top:8px;
+    text-align:center;
+    font-size: 30px;
+    font-weight:bold;
+    flex-grow:1;
+}
+
+.windows {
+    text-align:right;
+    font-family: sans-serif;
+    color:#000000be;
+    margin-right:27px;
+    font-size: 30px;
+    width:95px;
+}
+
+.windows:hover {
+    cursor:url(owocursorsmol.png) 15 0, pointer; 
+}
+
+/*#minimize {
+    padding-top:24px;
+}
+*/
+
+#minimize:hover {
+    color:#00000059;
+}
+
+#window:hover {
+    color:#00000059;
+}
+
+#close:hover {
+    color:red;
+}
+
+.text {
+    color:white;
+    margin-left: 10vh;
+}
+
+h1 {
+    font-size:20vh;
+    margin-bottom:5vh;
+    margin-top:10vh;
+}
+
+.hehe {
+    font-size: 5vh;
+    margin:2vh 0vh 2vh 0vh;
+}
+
+.percent {
+    font-size: 5vh;
+}
+
+.fine-print {
+    font-size: 2vh;
+}
+
+.finer-print {
+    margin-top:4vh;
+    font-size: 1vh;
+}
+
+.finer-print2 {
+    font-size: 1vh;
+    margin-bottom: 1vh;
+}
+
+.qrcode {
+    margin-top:1vh;
+    height: 10vh;
+}
+
+.qrcode:hover {
+    cursor:url(owocursorsmol.png) 15 0, pointer; 
+}
+
+.print {
+    display:inline-block;
+    margin-left: 4vh;
+}

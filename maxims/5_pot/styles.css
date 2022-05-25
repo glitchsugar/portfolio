@@ -1,0 +1,77 @@
+body {
+    overflow:hidden;
+    background: #2C4276;
+    background: -webkit-linear-gradient(bottom, #2C4276, #75BBCF);
+    background: -moz-linear-gradient(bottom, #2C4276, #75BBCF);
+    background: linear-gradient(to top, #2C4276, #75BBCF);
+}
+
+p {
+    color:#c0e9f5;
+    font-size: 25vh;
+    text-align:center;
+    position: relative;
+    animation: boil 4s linear infinite;
+    top: -5vh;
+}
+
+p:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes boil {
+    0% {transform: translate(1vh, 1vh) rotate(0deg);}
+    10% {transform: translate(-1vh, -2vh) rotate(-2deg);}
+    20% {transform: translate(-2vh, 0vh) rotate(2deg);}
+    30% {transform: translate(2vh, 2vh) rotate(0deg);}
+    40% {transform: translate(1vh, -1vh) rotate(2deg);}
+    50% {transform: translate(-1vh, 2vh) rotate(-2deg);}
+    60% {transform: translate(-2vh, 1vh) rotate(0deg);}
+    70% {transform: translate(2vh, 1vh) rotate(-2deg);}
+    80% {transform: translate(-1vh, -1vh) rotate(2deg);}
+    90% {transform: translate(1vh, 2vh) rotate(-2deg);}
+    100% {transform: translate(1vh, 1vh) rotate(0deg);}
+}
+
+.prev {
+    color:#75BBCF;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.prev:hover {
+	animation-name: previous;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes previous {
+	0% {left:20px;}
+	50% {left:25px;}
+	100% {left:20px;}
+}
+
+.next {
+    color:#2C4276;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.next:hover {
+	animation-name: nextone;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes nextone {
+	0% {right:20px;}
+	50% {right:25px;}
+	100% {right:20px;}
+}
+
+.button {
+    text-decoration: none;
+}

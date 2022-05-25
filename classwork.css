@@ -1,0 +1,229 @@
+body {
+    margin:0;
+}
+
+.link {
+    text-align: center;
+    font-size:12vh;
+    text-decoration:none;
+    font-family: 'Libre Barcode 39 Text', sans-serif;
+    color:#ffffff;
+}
+
+.fun {
+    text-decoration:none;
+    color:#000000;
+}
+
+.fixed-position {
+    position: sticky;
+    box-sizing:border-box;
+    background-color:#ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    box-shadow: rgba(73, 73, 73) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+    z-index: 9999;
+}
+
+.bgcolor {
+    box-sizing:border-box;
+    margin-left: 27px;
+    margin-top: 9px;
+    display: flex;
+}
+
+.bgcolor:hover {
+    cursor:pointer;
+}
+
+.button {
+    display: inline-block;
+    margin-left:-17px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #202020;
+    position: relative;
+    transition: margin-top 0.2s ease-in-out;
+}
+
+#white {
+    background-color: #ffffff;
+}
+
+#pink {
+    background-color: #ffc0cb;
+}
+
+#orange {
+    background-color: #ffab8c;
+}
+
+#yellow {
+    background-color: #ffee8b;
+}
+
+#green {
+    background-color: #cbfdb7;
+}
+
+#blue {
+    background-color: #87cefa;
+}
+
+#purple {
+    background-color: #dda0dd;
+}
+
+.button:hover {
+    margin-top:-5px;
+}
+
+.title {
+    font-family: 'Varela Round', sans-serif;
+    color:#000000be;
+    margin-top:8px;
+    text-align:center;
+    font-size: 30px;
+    font-weight:bold;
+    flex-grow:1;
+}
+
+.windows {
+    text-align:right;
+    font-family: sans-serif;
+    color:#000000be;
+    margin-right:27px;
+    font-size: 30px;
+    width:95px;
+}
+
+.windows:hover {
+    cursor:pointer;
+}
+
+#minimize {
+    padding-top:24px;
+    font-weight:bold;
+}
+
+#minimize:hover {
+    color:#00000059;
+}
+
+#window:hover {
+    color:#00000059;
+}
+
+#close:hover {
+    color:red;
+}
+
+.maxims {
+    overflow:hidden;
+    position: fixed;
+    box-sizing:border-box;
+    background-color: #000000;
+    right: 0%;
+    width: 75%;
+    height:15%;
+    bottom:60%;
+    color:#858585;
+    transition: color 0.25s;
+}
+
+.maxims:hover {
+    color:white;
+}
+
+.cfl {
+    overflow:hidden;
+    position: fixed;
+    box-sizing:border-box;
+    background-color: #000000;
+    right: 0%;
+    width: 75%;
+    height:15%;
+    bottom:30%;
+    color:#858585;
+    transition: color 0.25s;
+}
+
+.cfl:hover {
+    color:white;
+}
+
+.gen {
+    overflow:hidden;
+    position: fixed;
+    box-sizing:border-box;
+    background-color: #E8124C;
+    left: 0%;
+    width: 75%;
+    height:15%;
+    bottom:75%;
+    color:#FCC0D0;
+    transition: color 0.25s;
+}
+
+.gen:hover {
+    color:white;
+}
+
+.dv {
+    overflow:hidden;
+    position: fixed;
+    box-sizing:border-box;
+    background-color: #E8124C;
+    left: 0%;
+    width: 75%;
+    height:15%;
+    bottom:45%;
+    color:#FCC0D0;
+    transition: color 0.25s;
+}
+
+.dv:hover {
+    color:white;
+}
+
+.av {
+    overflow:hidden;
+    position: fixed;
+    box-sizing:border-box;
+    background-color: #E8124C;
+    left: 0%;
+    width: 75%;
+    height:15%;
+    bottom:15%;
+    color:#FCC0D0;
+    transition: color 0.25s;
+}
+
+.av:hover {
+    color:white;
+}
+
+.home {
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    width:100vw;
+    position:fixed;
+    bottom:2%;
+    color: black;
+    transition:color 0.25s;
+}
+
+.home:hover {
+    color: #00000080;
+}
+a .link {
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    width:100vw;
+}

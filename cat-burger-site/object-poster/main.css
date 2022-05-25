@@ -1,0 +1,328 @@
+* {
+    margin: 10;
+    padding: 10;
+	box-sizing: border-box;
+}
+
+
+html, 
+body {
+    background: #FCF1CA;
+    font-family: "Eczar";
+    text-align: center;
+}
+
+/* .header {
+    position: fixed;
+} */
+
+.poster {
+    width: 900px;
+	height: 556px;
+	margin: 0 auto;
+	background: #D5BCA1;
+	position: relative; 
+    font-family: Arial;
+    font-size:100px;
+    margin-bottom:5vh;
+}
+
+.casino {
+    font-size: 4vw;
+    color:#68521D;
+    margin-bottom: 0;
+    margin-top:8vh;
+}
+
+.casino:hover {
+    animation-name: glint-casino;
+    animation-duration: .45s;
+}
+
+@keyframes glint-casino {
+    0%  {color:#68521D}
+    5%  {color: rgb(104,82,29);
+        background: -webkit-linear-gradient(0deg, rgba(104,82,29,1) 0%, rgba(183,158,95,1) 0%, rgba(104,82,29,1) 19%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    25% {color: rgb(104,82,29);
+        background: -webkit-linear-gradient(0deg, rgba(104,82,29,1) 4%, rgba(183,158,95,1) 25%, rgba(104,82,29,1) 44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    50% {color: rgb(104,82,29);
+        background: -webkit-linear-gradient(0deg, rgba(104,82,29,1) 31%, rgba(183,158,95,1) 50%, rgba(104,82,29,1) 69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    75% {color: rgb(104,82,29);
+        background: -webkit-linear-gradient(0deg, rgba(104,82,29,1) 54%, rgba(183,158,95,1) 75%, rgba(104,82,29,1) 94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    95% {color: rgb(104,82,29);
+        background: -webkit-linear-gradient(0deg, rgba(104,82,29,1) 81%, rgba(183,158,95,1) 100%, rgba(104,82,29,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    100% {color:#68521D}
+}
+
+.soon {
+    font-size: 1.25vw;
+    color:#68521D;
+    margin-top: 0.5vh;
+}
+
+/* IMPORTANT: all poster elements must include the "position: absolute;" */
+
+#circle.outer-ring {
+    position: absolute;
+    left:150px;
+    width: 600px;
+    height: 300px;  
+    border-radius: 0 0 450px 450px;
+    background: #B79E5F;
+    background: -webkit-radial-gradient(bottom, #B79E5F, #68521D);
+    background: -moz-radial-gradient(bottom, #B79E5F, #68521D);
+    background: radial-gradient(to top, #B79E5F, #68521D);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 10px -7px;
+    
+    /* left: 50px;
+    top: 100px; */
+
+    /* optional: try CSS Gradients: https://www.css-gradient.com/ */
+
+    /* optional: try CSS dropshadows: https://getcssscan.com/css-box-shadow-examples */
+}
+
+#circle.outer-ring-glint {
+    position: absolute;
+    left:175px;
+    width: 550px;
+    height: 275px;  
+    border-radius: 0 0 412.5px 412.5px;
+    background: #E3CD92;
+}
+
+#circle.outer-circle {
+    position: absolute;
+    left:180px;
+    width: 540px;
+    height: 270px;  
+    border-radius: 0 0 410px 410px;
+    background: #7D662B;
+    background: -webkit-radial-gradient(bottom, #7D662B, #6B551D);
+    background: -moz-radial-gradient(bottom, #7D662B, #6B551D);
+    background: radial-gradient(to top, #7D662B, #6B551D);
+}
+
+#circle.inner-ring {
+    position: absolute;
+    left:272.5px;
+    width: 355px;
+    height: 177.5px;  
+    border-radius: 0 0 266.25px 266.25px;
+    background: #B79E5F;
+    background: -webkit-radial-gradient(bottom, #B79E5F, #68521D);
+    background: -moz-radial-gradient(bottom, #B79E5F, #68521D);
+    background: radial-gradient(to top, #B79E5F, #68521D);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 40px 30px -7px;
+}
+
+#circle.inner-ring-glint {
+    position: absolute;
+    left:300px;
+    width: 300px;
+    height: 150px;  
+    border-radius: 0 0 225px 225px;
+    background: #E3CD92;
+}
+
+#circle.inner-circle {
+    position: absolute;
+    left: 305px;
+    width: 290px;
+    height: 145px;  
+    border-radius: 0 0 222.5px 222.5px;
+    background: #7D662B;
+    background: -webkit-radial-gradient(bottom, #7D662B, #6B551D);
+    background: -moz-radial-gradient(bottom, #7D662B, #6B551D);
+    background: radial-gradient(to top, #7D662B, #6B551D);
+}
+
+.opening-soon {
+    position: absolute;
+    font-family: arial;
+    text-align:center;
+    font-size: 50px;
+    bottom: 50px;
+    left:295px;
+    color: #68521D;
+}
+
+.poster:hover .opening-soon{
+    animation-name: glint-casino;
+    animation-duration: 0.25s;
+    animation-delay: 0.875s;
+}
+
+.poster:hover #circle.outer-ring{
+    animation-name: glint-coin;
+    animation-duration: 2s;
+}
+
+.poster:hover #circle.inner-ring{
+    animation-name: glint-coin;
+    animation-duration: 2s;
+}
+
+@keyframes glint-coin{
+    0% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: radial-gradient(to top, #B79E5F, #6B551D);}
+    3.75% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom right, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom right, #B79E5F, #6B551D);
+        background: radial-gradient(to top left, #B79E5F, #6B551D);}
+    7.5% {background: #B79E5F;
+        background: -webkit-radial-gradient(right, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(right, #B79E5F, #6B551D);
+        background: radial-gradient(to left, #B79E5F, #6B551D);}
+    11.25% {background: #B79E5F;
+        background: -webkit-radial-gradient(top right, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(top right, #B79E5F, #6B551D);
+        background: radial-gradient(to bottom left, #B79E5F, #6B551D);}
+    15% {background:#68521D;}
+    18.75% {background: #B79E5F;
+        background: -webkit-radial-gradient(top left, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(top left, #B79E5F, #6B551D);
+        background: radial-gradient(to bottom right, #B79E5F, #6B551D);}
+    22.5% {background: #B79E5F;
+        background: -webkit-radial-gradient(left, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(left, #B79E5F, #6B551D);
+        background: radial-gradient(to right, #B79E5F, #6B551D);}
+    26.25% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom left, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom left, #B79E5F, #6B551D);
+        background: radial-gradient(to top right, #B79E5F, #6B551D);}
+    30% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: radial-gradient(to top, #B79E5F, #6B551D);}
+    70% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: radial-gradient(to top, #B79E5F, #6B551D);}
+    73.25% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom right, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom right, #B79E5F, #6B551D);
+        background: radial-gradient(to top left, #B79E5F, #6B551D);}
+    77.5% {background: #B79E5F;
+        background: -webkit-radial-gradient(right, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(right, #B79E5F, #6B551D);
+        background: radial-gradient(to left, #B79E5F, #6B551D);}
+    81.75% {background: #B79E5F;
+        background: -webkit-radial-gradient(top right, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(top right, #B79E5F, #6B551D);
+        background: radial-gradient(to bottom left, #B79E5F, #6B551D);}
+    85% {background:#68521D;}
+    88.25% {background: #B79E5F;
+        background: -webkit-radial-gradient(top left, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(top left, #B79E5F, #6B551D);
+        background: radial-gradient(to bottom right, #B79E5F, #6B551D);}
+    92.5% {background: #B79E5F;
+        background: -webkit-radial-gradient(left, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(left, #B79E5F, #6B551D);
+        background: radial-gradient(to right, #B79E5F, #6B551D);}
+    97.75% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom left, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom left, #B79E5F, #6B551D);
+        background: radial-gradient(to top right, #B79E5F, #6B551D);}
+    100% {background: #B79E5F;
+        background: -webkit-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: -moz-radial-gradient(bottom, #B79E5F, #6B551D);
+        background: radial-gradient(to top, #B79E5F, #6B551D);}
+} 
+
+.ccasino {
+    position: absolute;
+    color:#927736;
+    transform:rotate(-35deg);
+    top:45px;
+    right:310px;
+}
+
+.acasino {
+    position: absolute;
+    color:#927736;
+    transform:rotate(-42deg);
+    top:5px;
+    right:260px;
+}
+
+.scasino {
+    position: absolute;
+    color:#927736;
+    transform:rotate(-54deg);
+    top:-42px;
+    right:220px;
+}
+
+.fixed-position {
+    position: fixed;
+    box-sizing:border-box;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 56px;
+    background-color: #4A1909;
+    display: flex;
+    flex-direction:row;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.nav {
+    line-height: 40px;
+    /* padding-top: 15px; */
+    /* padding-bottom: 10px; */
+    margin-top: 8px;
+    margin-bottom:8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9vw;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vw;
+    display: block;
+}
+
+.nav:hover {
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 0.1s;
+}
+
+.home {
+    background-color: #C63102;
+}
+
+.object-study {
+    background-color:#EE7D03;
+}
+
+.posternav {
+    background-color:#F2BF00;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.interview {
+    background-color: #6D853C;
+}
+
+.squish {
+    background-color:#762F19;
+}

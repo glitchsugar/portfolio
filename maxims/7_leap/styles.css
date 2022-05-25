@@ -1,0 +1,173 @@
+body {
+    overflow: hidden;
+}
+
+p {
+    font-size: 15vh;
+    margin: 0;
+    position: absolute;
+    left: 10vh;
+    top:40vh;
+}
+
+.p {
+    position:relative;
+    animation: leapp 7.8s linear infinite;
+}
+
+@keyframes leapp {
+    0% {left:0; top:0; color:black;}
+    20% {left:0; top:0;}
+    23% {left:3vh; top:-8vh;}
+    25% {left:5vh; top:-10vh;}
+    27% {left:7vh; top:-8vh;}
+    30% {left:9vh; top:80vh; color:black}
+    31% {color:white;}
+    93% {left:0; top:0; color:white;}
+    95% {color:black;}
+    100% {color:black;}
+}
+
+.a {
+    position:relative;
+    animation: leaap 7.8s linear infinite;
+}
+
+@keyframes leaap {
+    0% {left:0; top:0; color:black;}
+    30% {left:0; top:0;}
+    33% {left:3vh; top:-8vh;}
+    35% {left:5vh; top:-10vh;}
+    37% {left:7vh; top:-8vh;}
+    40% {left:9vh; top:80vh; color:black}
+    41% {color:white;}
+    93% {left:0; top:0; color:white;}
+    95% {color:black;}
+    100% {color:black;}
+}
+
+.e {
+    position:relative;
+    animation: leeap 7.8s linear infinite;
+}
+
+@keyframes leeap {
+    0% {left:0; top:0; color:black;}
+    40% {left:0; top:0;}
+    43% {left:3vh; top:-8vh;}
+    45% {left:5vh; top:-10vh;}
+    47% {left:7vh; top:-8vh;}
+    50% {left:9vh; top:80vh; color:black}
+    51% {color:white;}
+    93% {left:0; top:0; color:white;}
+    95% {color:black;}
+    100% {color:black;}
+}
+
+.l {
+    position:relative;
+    animation: lleap 7.8s linear infinite;
+}
+
+@keyframes lleap {
+    0% {left:0; top:0; color:black;}
+    50% {left:0; top:0;}
+    53% {left:3vh; top:-8vh;}
+    55% {left:5vh; top:-10vh;}
+    57% {left:7vh; top:-8vh;}
+    60% {left:9vh; top:80vh; color:black}
+    61% {color:white;}
+    93% {left:0; top:0; color:white;}
+    95% {color:black;}
+    100% {color:black;}
+}
+
+.pupil {
+    width: 2.5vh;
+    height: 3vh;
+    background: black;
+    border-radius: 1.25vh / 2.5vh;
+}
+
+.one {
+    position:relative;
+    top: 48vh;
+    left: 22vh;
+}
+
+.two {
+    position:relative;
+    top: 45vh;
+    left: 29.5vh;
+}
+
+.container:hover .one {
+    animation: lookone 4s linear infinite;
+}
+
+@keyframes lookone {
+    0% {top:48vh; left:22vh;}
+    5% {top:48vh; left:22vh;}
+    10% {top:48.25vh; left:21.75vh;}
+    15% {top:49.5vh; left:21.25vh;}
+    30% {top:49.5vh; left:21.25vh;}
+    35% {top:48.25vh; left:21.75vh;}
+    40% {top:48vh; left:22vh;}
+    100% {top:48vh; left:22vh;}
+}
+
+.container:hover .two {
+    animation: looktwo 4s linear infinite;
+}
+
+@keyframes looktwo {
+    0% {top:45vh; left:29.5vh;}
+    5% {top:45vh; left:29.5vh;}
+    10% {top:45.25vh; left:29.25vh;}
+    15% {top:46.5vh; left:28.75vh;}
+    30% {top:46.5vh; left:28.75vh;}
+    35% {top:45.25vh; left:29.25vh;}
+    40% {top:45vh; left:29.5vh;}
+    100% {top:45vh; left:29.5vh;}
+}
+
+.prev {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.prev:hover {
+	animation-name: previous;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes previous {
+	0% {left:20px;}
+	50% {left:25px;}
+	100% {left:20px;}
+}
+
+.next {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.next:hover {
+	animation-name: nextone;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes nextone {
+	0% {right:20px;}
+	50% {right:25px;}
+	100% {right:20px;}
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,251 @@
+html {
+    cursor:url(../uwucursorsmol.png), default;
+}
+
+body {
+    font-family:sans-serif;
+    margin:0;
+    background: #ffffff;
+}
+
+p {
+    font-size:100px;
+}
+
+/*a{
+    text-align: center;
+    font-size:18vh;
+    text-decoration:none;
+    font-family: 'Libre Barcode 39 Text', sans-serif;
+    color:#ffffff;
+}
+*/
+
+a{
+    text-decoration:none;
+    color:#000000;
+}
+
+a:hover {
+    cursor:url(../owocursorsmol.png) 15 0, pointer; 
+}
+
+.fixed-position {
+    z-index:9999;
+    position: sticky;
+    box-sizing:border-box;
+    background-color:#ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    box-shadow: rgba(73, 73, 73) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+}
+
+.bgcolor {
+    box-sizing:border-box;
+    margin-left: 27px;
+    margin-top: 9px;
+    display: flex;
+}
+
+.bgcolor:hover {
+    cursor:url(../owocursorsmol.png) 15 0, pointer;
+}
+
+.button {
+    display: inline-block;
+    margin-left:-17px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #202020;
+    position: relative;
+    transition: margin-top 0.2s ease-in-out;
+}
+
+#white {
+    background-color: #ffffff;
+}
+
+#pink {
+    background-color: #ffc0cb;
+}
+
+#orange {
+    background-color: #ffab8c;
+}
+
+#yellow {
+    background-color: #ffee8b;
+}
+
+#green {
+    background-color: #cbfdb7;
+}
+
+#blue {
+    background-color: #87cefa;
+}
+
+#purple {
+    background-color: #dda0dd;
+}
+
+.button:hover {
+    margin-top:-5px;
+}
+
+.title {
+    font-family: 'Varela Round', sans-serif;
+    color:#000000be;
+    margin-top:8px;
+    text-align:center;
+    font-size: 30px;
+    font-weight:bold;
+    flex-grow:1;
+}
+
+.windows {
+    text-align:right;
+    font-family: sans-serif;
+    color:#000000be;
+    margin-right:27px;
+    font-size: 30px;
+    width:95px;
+}
+
+.windows:hover {
+    cursor:url(../owocursorsmol.png) 15 0, pointer;
+}
+
+#minimize {
+    padding-top:24px;
+    font-weight:bold;
+}
+
+#minimize:hover {
+    color:#00000059;
+}
+
+#window:hover {
+    color:#00000059;
+}
+
+#close:hover {
+    color:red;
+}
+
+img {
+    display:flex;
+    align-self:center;
+    margin-top: 2vh;
+    width: 35%;
+    padding: 0.5%;
+}
+
+img:hover {
+    cursor:url(../owocursorsmol.png) 15 0, pointer;
+}
+
+.home {
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    font-size:10vh;
+    text-decoration:none;
+    font-family: 'Libre Barcode 39 Text', sans-serif;
+    color: black;
+    margin:5vh;
+    transition-property: color;
+    transition-duration: 0.25s;
+}
+
+.home:hover {
+    color: #00000080;
+}
+
+.back {
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    font-size:10vh;
+    margin-top: 7vh;
+    margin-bottom:-2vh;
+    text-decoration:none;
+    font-family: 'Libre Barcode 39 Text', sans-serif;
+    color: black;
+    transition-property: color;
+    transition-duration: 0.25s;
+}
+
+.back:hover {
+    color: #00000080;
+}
+
+.alignment{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:space-between;
+}
+
+.logos {
+    width:98vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    justify-items:center;
+}
+
+.first {
+    margin-top: 7vh;
+}
+
+.last {
+    margin-bottom: 5vh;
+}
+
+.name {
+    text-align: center;
+    margin-top:-7.5vh;
+    position:relative;
+    font-size:7vh;
+    text-decoration:none;
+    font-family: 'Libre Barcode 39 Text', sans-serif;
+    color: black;
+    transition: color 0.25s;
+}
+
+.dd {
+    margin-top: -0.5vh;
+}
+
+.ma {
+    text-align: center;
+    position:relative;
+    font-size:7vh;
+    text-decoration:none;
+    font-family: 'Libre Barcode 39 Text', sans-serif;
+    color: black;
+}
+
+.name:hover {
+    color: #00000080;
+}
+
+.explain {
+    text-align:center;
+    font-family: 'Varela Round', sans-serif;
+    font-size:2vh;
+    color:#00000080;
+}
+
+.explaindd {
+    text-align:center;
+    font-family: 'Varela Round', sans-serif;
+    font-size:2vh;
+    color:#00000080;
+    margin-top:-5vh;
+}

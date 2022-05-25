@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+html, 
+body {
+    text-align:center;
+    font-family: "Eczar";
+    background-color:#4A1909;
+}
+
+.catburger {
+    height:50vh;
+    width:19vw;    
+    transform: translateY(0);
+    transition:5s;
+ }
+    
+.catburger:hover {
+    transform:translateY(40vh);
+    height: 10vh;
+    transition: 2s;
+}
+
+.cbposition {
+    margin-top:20%;
+    z-index:1000;
+    position:relative;
+}
+
+.squish-him {
+    margin-top:8%;
+    /* left:39.5%; */
+    z-index:999;
+    font-size:4vw;
+    color:white;
+    position:absolute;
+}
+
+#spotlight {
+    border-bottom: 110vh solid;
+    border-left: 40vh solid transparent;
+    border-right: 40vh solid transparent;
+    border-radius: 10vh 10vh 30vh 30vh;
+    height: 0;
+    width: 30vh;
+    color: #D2B26B;
+    position: absolute;
+    top:-10vh;
+    /* left: 31%; */
+    animation-name: lightson;
+    animation-duration:6s;
+}
+
+@keyframes lightson {
+    0% {color:#00000000;}
+    100% {color: #D2B26B;}
+}
+
+.centered {
+    display:flex;
+    justify-content: center;
+}
+
+.fixed-position {
+    position: fixed;
+    box-sizing:border-box;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 56px;
+    background-color: #4A1909;
+    display: flex;
+    flex-direction:row;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: #ffe68c14 105px 105px 105px 105px; 
+}
+
+.nav {
+    line-height: 40px;
+    margin-top: 8px;
+    margin-bottom:8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9vw;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vw;
+    display: block;
+}
+
+.nav:hover {
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 0.1s;
+}
+
+.home {
+    background-color: #C63102;
+}
+
+.object-study {
+    background-color:#EE7D03;
+}
+
+.poster {
+    background-color:#F2BF00;
+}
+
+.interview {
+    background-color: #6D853C;
+}
+
+.squish {
+    background-color:#762F19;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+

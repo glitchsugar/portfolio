@@ -1,0 +1,58 @@
+body {
+    overflow:hidden;
+}
+
+svg {
+    display:flex;
+    align-items:center;
+}
+
+text {
+    font-size: 13.9px;
+    fill: #919191;
+}
+
+path {
+    fill:transparent;
+}
+
+.prev {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.prev:hover {
+	animation-name: previous;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes previous {
+	0% {left:20px;}
+	50% {left:25px;}
+	100% {left:20px;}
+}
+
+.next {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.next:hover {
+	animation-name: nextone;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes nextone {
+	0% {right:20px;}
+	50% {right:25px;}
+	100% {right:20px;}
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+}

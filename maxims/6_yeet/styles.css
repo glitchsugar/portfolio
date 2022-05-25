@@ -1,0 +1,60 @@
+body {
+    overflow: hidden;
+}
+
+p {
+    font-size: 20vh;
+    position: relative;
+    animation: yeet 5s ease-in-out infinite;
+}
+
+@keyframes yeet {
+    0% {left: 5vw; bottom: -30vh;}
+    20% {left: -2vw; bottom: -30vh; transform:rotate(-10deg);}
+    25% {left:40vw; bottom: -70vh; transform:rotate(90deg);}
+    27% {left:40vw; bottom: -70vh; transform:rotate(90deg);}
+    40% {left:40vw; bottom: -120vh; transform:rotate(90deg);}
+    50% {left:75vw; bottom: -30vh; transform:rotate(0deg);}
+    100% {left: 5vw; bottom: -30vh;}
+}
+
+.prev {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.prev:hover {
+	animation-name: previous;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes previous {
+	0% {left:20px;}
+	50% {left:25px;}
+	100% {left:20px;}
+}
+
+.next {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.next:hover {
+	animation-name: nextone;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes nextone {
+	0% {right:20px;}
+	50% {right:25px;}
+	100% {right:20px;}
+}
+
+.button {
+    color:black;
+    text-decoration: none;
+}
